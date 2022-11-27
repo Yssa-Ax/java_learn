@@ -56,10 +56,6 @@ public class Queen8 {
             // n = 1  放置第 2列 1 n = 1 array[1] = 1
             // Math.abs(1-0) == 1  Math.abs(array[n] - array[i]) = Math.abs(1-0) = 1
             //3. 判断是否在同一行, 没有必要，n 每次都在递增
-            System.out.println(array[i]);
-            System.out.println(array[n]);
-            System.out.println(Math.abs(array[n] - array[i]));
-            System.out.println(Math.abs(n-i));
             if(array[i] == array[n] || Math.abs(n-i) == Math.abs(array[n] - array[i]) ) {
                 return false;
             }
